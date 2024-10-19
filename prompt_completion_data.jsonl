@@ -1,4 +1,3 @@
-{"prompt": "When can transfer students apply to the University of New Haven?", "completion": "Transfer students can apply at any time throughout the year, as the University of New Haven reviews applications on a rolling basis. We accept applications for the spring semester, beginning in late January, and for the fall semester, beginning in late August."}
 {"prompt":"What is the next open house at the University of New Haven?","completion":"The next open house is the Henry C. Lee Open House for the College of Criminal Justice & Forensic Sciences, which will be held on November 3rd at 10:00 AM at the University of New Haven."}
 {"prompt":"Can I bring guests to the open house?","completion":"Yes, students attending the open house can bring up to two guests, for a total of three people per party."}
 {"prompt":"When is the next general Fall Open House?","completion":"The next general Fall Open House will be held on November 17th at 10:00 AM at the University of New Haven. Another Fall Open House is scheduled for December 8th."}
@@ -27,22 +26,12 @@
 {"prompt":"Can I get a school absence note for my visit?","completion":"Yes, if your visit is during a school day, an admissions staff member can assist you with getting an absence note."}
 {"prompt":"Can I bring an additional guest to the campus tour?","completion":"We ask that you limit the number of guests to two people, making a total of three in your party. However, if you have a younger sibling or family member who cannot stay at home, they are welcome to attend."}
 {"prompt":"Can I reschedule my visit to the University of New Haven?","completion":"Yes, you can reschedule your visit by canceling it through the Registration Form linked in your confirmation email. To reschedule for an upcoming event, visit: newhaven.edu/visit."}
-{"prompt":"What are the application deadlines for first-year students for Fall 2025?","completion":"The application deadlines are as follows:
-Early Decision: December 1 (Binding)
-Early Action I: December 15 (Non-Binding)
-Early Action II: February 15 (Non-Binding)
-Regular Decision: Rolling (Non-Binding), with a priority deadline of March 1."}
+{"prompt":"What are the application deadlines for first-year students for Fall 2025?","completion":"The application deadlines are as followsEarly Decision: December 1 (Binding),Early Action I: December 15 (Non-Binding),Early Action II: February 15 (Non-Binding),Regular Decision: Rolling (Non-Binding), with a priority deadline of March 1."}
 {"prompt":"What does a binding admission decision mean?","completion":"A binding admission decision means that the University of New Haven is your first choice. Upon acceptance, you are committed to enroll at the university."}
 {"prompt":"What is Early Action at the University of New Haven?","completion":"Early Action means that the University of New Haven is one of your top choices. You will receive your admissions decision early, but you do not have to commit until the normal reply date of May 1."}
 {"prompt":"What are the benefits of applying Early Decision or Early Action?","completion":"Students admitted under Early Decision or Early Action will receive a guaranteed minimum of $18,000 in annual merit scholarships, priority consideration for enrollment into top choice programs, early notification of admission, and more opportunities to attend exclusive accepted student events."}
 {"prompt":"How long does it take to receive an admission decision after applying?","completion":"Students can expect to receive a decision on their completed application within 4-6 weeks after submission."}
-{"prompt":"What materials are required for first-year applicants?","completion":"First-year applicants must submit the following:
-Common Application or UNewHaven Application
-$50 application fee
-Official high school transcript (unofficial acceptable to complete the application)
-Essay (250-650 words)
-Optional: Letter of recommendation
-SAT or ACT scores (if required by the program)."}
+{"prompt":"What materials are required for first-year applicants?","completion":"First-year applicants must submit the following:Common Application or UNewHaven Application,$50 application fee,Official high school transcript (unofficial acceptable to complete the application),Essay (250-650 words),Optional: Letter of recommendation,SAT or ACT scores (if required by the program)."}
 {"prompt":"What do homeschooled applicants need to submit?","completion":"Homeschooled applicants must submit SAT or ACT scores, detailed documentation of their academic curriculum, and proof of secondary school completion, such as a final transcript with a graduation date or a high school equivalency diploma."}
 {"prompt":"Can I reschedule my campus visit?","completion":"Yes, you can reschedule your visit by canceling it through the Registration Form linked in your confirmation email. To reschedule, visit newhaven.edu/visit."}
 {"prompt":"How can I submit my application materials to the University of New Haven?","completion":"Application materials can be submitted by uploading them to the Application Portal, emailing them to admissions@newhaven.edu, electronic submission by school counselors (via Naviance, Slate.org, Scoir), or mailing them to the Office of Undergraduate Admissions."}
@@ -50,51 +39,22 @@ SAT or ACT scores (if required by the program)."}
 {"prompt":"When can transfer students apply to the University of New Haven?","completion":"Transfer students can apply at any time throughout the year, as the University of New Haven reviews applications on a rolling basis. We accept applications for both the spring semester, which begins in late January, and the fall semester, which begins in late August."}
 {"prompt":"When should I apply as a transfer student?","completion":"It is recommended that transfer students apply as early as possible, as space in some academic programs fills up quickly. Applications for the following year typically begin being reviewed on September 1st."}
 {"prompt":"How long does it take to receive an admission decision as a transfer student?","completion":"You can expect to receive a decision on your transfer application within 1-2 weeks once your application is complete and all required materials have been submitted."}
-{"prompt":"What materials are required for transfer applicants?","completion":"Transfer applicants must submit the following:
-The University of New Haven Online Transfer Application
-Official transcripts from all colleges and universities attended
-A copy of your high school diploma or official high school transcript
-A 250-500 word written statement/essay detailing why you wish to pursue an education at the University of New Haven
-Complete the Free Application for Federal Student Aid (FAFSA) as soon as possible."}
+{"prompt":"What materials are required for transfer applicants?","completion":"Transfer applicants must submit the following:The University of New Haven Online Transfer Application,Official transcripts from all colleges and universities attended,A copy of your high school diploma or official high school transcript,A 250-500 word written statement/essay detailing why you wish to pursue an education at the University of New Haven,Complete the Free Application for Federal Student Aid (FAFSA) as soon as possible."}
 {"prompt":"What special requirements do I need to meet for the BS in Paramedicine program?","completion":"For the BS in Paramedicine Online program, you must hold an NREMT-P License as part of the application requirements."}
 {"prompt":"What is required for the Dental Hygiene program for transfer students?","completion":"Applicants to the Dental Hygiene program must submit one letter of recommendation as part of the application process."}
 {"prompt":"What materials are required for transfer students applying to Graphic and Digital Design?","completion":"Transfer students applying to the Graphic and Digital Design program must submit a portfolio of their previous college work along with the general transfer application materials"}
-{"prompt":"Who can I contact about transfer admissions at the University of New Haven?","completion":"For transfer admissions, you can contact your admissions counselor:
-Last names A-K: Contact Brittney Duntz at (203) 815-8742 or BDuntz@newhaven.edu.
-Last names L-Z: Contact Lizzy Locke at (203) 641-0719 or ELocke@newhaven.edu. If you have trouble reaching a Transfer Enrollment Counselor, you can email admissions@newhaven.edu."}
+{"prompt":"Who can I contact about transfer admissions at the University of New Haven?","completion":"For transfer admissions, you can contact your admissions counselor:Last names A-K: Contact Brittney Duntz at (203) 815-8742 or BDuntz@newhaven.edu.,Last names L-Z: Contact Lizzy Locke at (203) 641-0719 or ELocke@newhaven.edu. If you have trouble reaching a Transfer Enrollment Counselor, you can email admissions@newhaven.edu."}
 {"prompt":"Can I apply as an Undeclared student as a transfer applicant?","completion":"es, transfer students have the option of applying directly to their major of choice or applying as an Undeclared (Exploratory) student"}
 {"prompt":"What happens after I am accepted as a transfer student?","completion":"Once you are accepted, the University of New Haven will work on a transfer credit evaluation to show you how your credits will be applied to your degree program."}
-{"prompt":"What are the admission requirements for international undergraduate first-year students at the University of New Haven?","completion":"International undergraduate first-year applicants must submit:
-A complete online application or apply via the Common Application.
-Certified copies of high school records (transcripts, diplomas, etc.).
-An explanation of the high school grading system.
-A letter of recommendation from an academic source.
-A personal essay (250-650 words).
-English proficiency scores (TOEFL, IELTS, PTE, Duolingo, SAT/ACT) if English is not the official language of the applicant’s country."}
+{"prompt":"What are the admission requirements for international undergraduate first-year students at the University of New Haven?","completion":"International undergraduate first-year applicants must submit:A complete online application or apply via the Common Application.,Certified copies of high school records (transcripts, diplomas, etc.).,An explanation of the high school grading system.,A letter of recommendation from an academic source.,A personal essay (250-650 words).,English proficiency scores (TOEFL, IELTS, PTE, Duolingo, SAT/ACT) if English is not the official language of the applicant’s country."}
 {"prompt":"Do international applicants need to submit test scores to the University of New Haven?","completion":"The University of New Haven does not require test scores for most academic programs. However, if English is not the official language in your country, you must submit TOEFL, PTE, IELTS, Duolingo, SAT, or ACT scores."}
-{"prompt":"What is the priority deadline for international undergraduate applications?","completion":"The priority deadlines are:
-June 1st for the fall semester.
-November 1st for the spring semester."}
-{"prompt":"What are the required documents for international undergraduate transfer students?","completion":"International undergraduate transfer students must submit:
-A completed online application.
-Official post-secondary school transcripts.
-High school transcripts and diploma.
-A letter of recommendation from an academic source.
-A personal essay (250-650 words).
-English proficiency scores if fewer than 12 credits have been completed at a U.S. institution."}
+{"prompt":"What is the priority deadline for international undergraduate applications?","completion":"The priority deadlines are:June 1st for the fall semester.,November 1st for the spring semester."}
+{"prompt":"What are the required documents for international undergraduate transfer students?","completion":"International undergraduate transfer students must submit:A completed online application.,Official post-secondary school transcripts.,High school transcripts and diploma.,A letter of recommendation from an academic source.,A personal essay (250-650 words).,English proficiency scores if fewer than 12 credits have been completed at a U.S. institution."}
 {"prompt":"How can I submit my documents to the University of New Haven?","completion":"You can email your documents to IntUGAdm@newhaven.edu or mail them to: Office of International Undergraduate Admissions, University of New Haven, 300 Boston Post Road, West Haven, CT 06516. We recommend using a special courier such as FedEx, DHL, or UPS."}
-{"prompt":"What are the English language requirements for international students at the University of New Haven?","completion":"Non-native English speakers must submit one of the following scores:
-IELTS: 6.0
-TOEFL: 75
-SAT: 450 Evidence-Based Reading and Writing Score
-Pearson Test of English: 53
-Duolingo: 105 Alternatively, students can complete the AEPP Advanced Level 4 (English for Academic Purposes) certificate."}
+{"prompt":"What are the English language requirements for international students at the University of New Haven?","completion":"Non-native English speakers must submit one of the following scores:IELTS: 6.0,TOEFL: 75,SAT: 450 Evidence-Based Reading and Writing Score,Pearson Test of English: 53,Duolingo: 105 Alternatively, students can complete the AEPP Advanced Level 4 (English for Academic Purposes) certificate."}
 {"prompt":"What is Conditional Admission at the University of New Haven?","completion":"Conditional Admission is granted to international students who meet all academic requirements except the English language requirement. Once they meet the language and financial requirements, they will receive a University of New Haven I-20 and be allowed to enroll. Students may opt to enroll in the Academic English Preparatory Program (AEPP) to improve their English skills before starting academic classes."}
 {"prompt":"What is the Academic English Preparatory Program at the University of New Haven?","completion":"The Academic English Preparatory Program (AEPP) is a comprehensive program designed to prepare international students for undergraduate or graduate studies. It focuses on academic English skills in listening, reading, speaking, writing, and adjusting to American culture. The program is tailored to each student’s major and lasts 4 months per term."}
-{"prompt":"How can I evaluate my international transcripts for admission to the University of New Haven?","completion":"International transcripts that are not in English must be accompanied by a certified evaluation from one of the following agencies:
-World Education Services
-Educational Credential Evaluators
-SpanTran Education Services."}
+{"prompt":"How can I evaluate my international transcripts for admission to the University of New Haven?","completion":"International transcripts that are not in English must be accompanied by a certified evaluation from one of the following agencies:World Education Services,Educational Credential Evaluators,SpanTran Education Services."}
 {"prompt":"What is the deadline for spring applications for international students?","completion":"The priority deadline for spring applications is November 1st."}
 {"prompt":"Is the University of New Haven test optional?","completion":"Yes, the University of New Haven is a test optional institution. Many programs and populations can choose whether or not to have their SAT or ACT scores considered for admission"}
 {"prompt":"What is the University of New Haven's 'Do No Harm' policy?","completion":"The 'Do No Harm' policy means that if SAT or ACT scores are not required for your program, the University will only use submitted scores if they have a positive impact on your admissions decision or merit scholarship. If the scores would negatively impact your chance of admission or scholarship, they will automatically be excluded during the review process."}
@@ -120,16 +80,8 @@ SpanTran Education Services."}
 {"prompt":"What are the pre-enrollment fees for new students at the University of New Haven?","completion":"The pre-enrollment fees for new students include a $50 application fee, a $300 enrollment fee for both residential and commuter students, and a $200 housing deposit for first-year and transfer residential students."}
 {"prompt":"How much does it cost for full-time tuition at the University of New Haven for the 2024-2025 academic year?","completion":"For full-time undergraduate students (12-17 credit hours), the yearly tuition is $45,644, or $22,822 per term."}
 {"prompt":"What are the additional fees for credits over 17 at the University of New Haven?","completion":"If you take more than 17 credit hours, there is an additional charge of $1,520 per credit hour."}
-{"prompt":"What meal plans are available for undergraduate students?","completion":"The University offers several meal plans, including:
-Charger Pride Meal Plan: $3,464 per term ($6,928 per year)
-Charger Gold Meal Plan: $3,336 per term ($6,672 per year)
-Charger Blue Meal Plan: $2,955 per term ($5,910 per year)
-Senior Meal Plan: $1,926 per term ($3,852 per year)
-Other smaller plans like Green Plate, Gold Plate, and Blue Plate are also available."}
-{"prompt":"What are the housing charges for residence halls at the University of New Haven?","completion":"Housing charges vary by residence hall. For example:
-Standard Room: $6,058 per term ($12,116 per year)
-Celentano Hall (Single Occupancy): $7,249 per term ($14,498 per year)
-The Atwood 2-Bedroom: $8,740 per term ($17,480 per year)."}
+{"prompt":"What meal plans are available for undergraduate students?","completion":"The University offers several meal plans, including:Charger Pride Meal Plan: $3,464 per term ($6,928 per year),Charger Gold Meal Plan: $3,336 per term ($6,672 per year),Charger Blue Meal Plan: $2,955 per term ($5,910 per year),Senior Meal Plan: $1,926 per term ($3,852 per year),Other smaller plans like Green Plate, Gold Plate, and Blue Plate are also available."}
+{"prompt":"What are the housing charges for residence halls at the University of New Haven?","completion":"Housing charges vary by residence hall. For example:Standard Room: $6,058 per term ($12,116 per year),Celentano Hall (Single Occupancy): $7,249 per term ($14,498 per year),The Atwood 2-Bedroom: $8,740 per term ($17,480 per year)."}
 {"prompt":"What are the tuition costs for part-time undergraduate students?","completion":"For part-time students (1-11 credit hours), the tuition is $1,520 per credit hour, and there is a part-time general fee of $155 per term."}
 {"prompt":"What is the cost for studying abroad at the Tuscany Campus in Prato, Italy?","completion":"For the Tuscany Campus study abroad program, the comprehensive fee per semester is $33,305. This includes $22,822 for tuition, $844 for the general fee, $6,058 for room, $3,336 for meals, and other miscellaneous fees."}
 {"prompt":"What are the additional fees for certain programs at the University of New Haven?","completion":"Additional fees may apply for specific courses and programs. For example, engineering, computer science, and chemistry courses each carry a tuition differential of $80 per credit hour. Lab fees may also apply to certain courses and range from $25 to $5,000."}
@@ -144,16 +96,8 @@ The Atwood 2-Bedroom: $8,740 per term ($17,480 per year)."}
 {"prompt":"What are the requirements for maintaining merit scholarships at the University of New Haven?","completion":"Merit scholarships are renewable for up to ten semesters, provided the student remains a full-time undergraduate and maintains the required minimum cumulative GPA set by the scholarship."}
 {"prompt":"How do high school partnerships affect scholarships at the University of New Haven?","completion":"The University has established partnerships with several high schools and organizations that include special scholarship opportunities for admitted, first-time students. These partnership scholarships cannot be combined with traditional merit scholarships."}
 {"prompt":"What is a private scholarship?","completion":"A private scholarship, also known as an outside scholarship, is awarded by sources outside the University of New Haven. Students can apply for these scholarships from businesses, organizations, civic groups, high schools, religious organizations, and other agencies."}
-{"prompt":"How can I find private scholarships?","completion":"To find private scholarships, students can:
-Contact their high school guidance counselor for opportunities.
-Check with community service organizations, religious groups, or civic groups.
-Ask their parents to check if their employer or union offers scholarships.
-Search for scholarships online using trusted websites"}
-{"prompt":"What should I be aware of to avoid scholarship scams?","completion":"To avoid scholarship scams, keep these tips in mind:
-You should never have to pay to apply for scholarships.
-No service can guarantee that you will get money.
-Be cautious if a service claims to do all the work for you.
-Scholarships should not require your credit card or bank account information."}
+{"prompt":"How can I find private scholarships?","completion":"To find private scholarships, students can:Contact their high school guidance counselor for opportunities.,Check with community service organizations, religious groups, or civic groups.,Ask their parents to check if their employer or union offers scholarships.,Search for scholarships online using trusted websites"}
+{"prompt":"What should I be aware of to avoid scholarship scams?","completion":"To avoid scholarship scams, keep these tips in mind:You should never have to pay to apply for scholarships.,No service can guarantee that you will get money.,Be cautious if a service claims to do all the work for you.,Scholarships should not require your credit card or bank account information."}
 {"prompt":"What should I do if I receive a private scholarship?","completion":"If you are awarded a private scholarship, you should send a copy of the award notification to the University of New Haven’s Financial Aid Office. This information helps determine whether any adjustments to your current financial aid package are necessary"}
 {"prompt":"Can private scholarships affect my financial aid?","completion":"es, private scholarships can affect your eligibility for other financial aid programs. Once you inform the Financial Aid Office of your private scholarship, they will review and adjust your financial aid package as necessary."}
 {"prompt":"What types of scholarships are considered outside scholarships?","completion":"Outside scholarships include those awarded by external agencies such as businesses, civic groups, or religious organizations. However, they do not include tuition exchange scholarships, tuition remission benefits, ROTC, or Vocational Rehabilitation benefits."}
