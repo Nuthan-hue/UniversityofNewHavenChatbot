@@ -5,7 +5,7 @@ openai.api_key = 'sk-proj-cy12x-iY258roS4VCxNn4Dv-05c28T7ExJDZt0zZpYsT-_DumoQWeJ
 
 # Upload the file for fine-tuning
 response = openai.File.create(
-  file=open("prompt_completion_data.jsonl", "rb"),
+  file=open("chat_format_data.jsonl", "rb"),
   purpose="fine-tune"
 )
 

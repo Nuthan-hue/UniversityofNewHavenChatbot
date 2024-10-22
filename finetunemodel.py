@@ -5,7 +5,7 @@ openai.api_key = 'sk-proj-cy12x-iY258roS4VCxNn4Dv-05c28T7ExJDZt0zZpYsT-_DumoQWeJ
 
 # Initiate fine-tuning with the uploaded training file
 response = openai.FineTuningJob.create(
-  training_file="file-KlCYvvPaSPmr4oMObyYJYjg6",  # Replace with the actual file ID you got from file upload
+  training_file="file-BjBDCx9iJe5LQVD7uaWjzx9A",  # Replace with the actual file ID you got from file upload
   model="gpt-3.5-turbo"  # Ensure this model is available for fine-tuning
 )
 

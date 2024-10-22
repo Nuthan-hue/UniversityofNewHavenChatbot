@@ -1,8 +1,10 @@
 import json
-import tiktoken # for token counting
+import tiktoken  # for token counting
 import numpy as np
 from collections import defaultdict
-data_path = "prompt_completion_data.jsonl"
+
+# Specify your data path
+data_path = "chat_format_data.jsonl"
 
 # Clean and load each line from the file
 with open(data_path, 'r', encoding='utf-8') as f:
@@ -20,29 +22,25 @@ with open(data_path, 'r', encoding='utf-8') as f:
 print("Num examples:", len(dataset))
 print("First example:", dataset[0])
 
-
-
+# Initialize format errors
 format_errors = defaultdict(int)
 
+# Validate format and check for errors
 for ex in dataset:
     if not isinstance(ex, dict):
         format_errors["data_type"] += 1
         continue
     
     # Check for prompt and completion fields
-    prompt = ex.get("prompt", None)
-    completion = ex.get("completion", None)
-    
-    if not prompt or not isinstance(prompt, str):
-        format_errors["missing_or_invalid_prompt"] += 1
-        
-    if not completion or not isinstance(completion, str):
-        format_errors["missing_or_invalid_completion"] += 1
-        
-    # If there are unrecognized keys
-    if any(k not in ("prompt", "completion") for k in ex):
-        format_errors["unrecognized_key"] += 1
+    messages = ex.get("messages", None)
+    if not messages or not isinstance(messages, list):
+        format_errors["missing_or_invalid_messages"] += 1
+        continue
 
+    if any(k not in ("system", "user", "assistant") for msg in messages for k in msg):
+        format_errors["unrecognized_role"] += 1
+
+# Report format errors if any
 if format_errors:
     print("Found errors:")
     for k, v in format_errors.items():
@@ -50,56 +48,45 @@ if format_errors:
 else:
     print("No errors found")
 
-
+# Token encoding
 encoding = tiktoken.get_encoding("cl100k_base")
 
-# Function to count tokens in "prompt" and "completion" fields
-def num_tokens_from_examples(examples, tokens_per_message=3):
+# Function to count tokens from examples in the chat format
+def num_tokens_from_chat_examples(examples, tokens_per_message=3):
     num_tokens = 0
     for example in examples:
-        # Count tokens in the prompt
-        prompt = example.get("prompt", "")
-        num_tokens += len(encoding.encode(prompt)) + tokens_per_message
-        
-        # Count tokens in the completion
-        completion = example.get("completion", "")
-        num_tokens += len(encoding.encode(completion)) + tokens_per_message
+        for message in example["messages"]:
+            content = message.get("content", "")
+            num_tokens += len(encoding.encode(content)) + tokens_per_message
     
-    num_tokens += 3  # Add 3 for completion boundary (as in chat format)
+    num_tokens += 3  # Add 3 for completion boundary
     return num_tokens
 
-# Function to count tokens specifically in the "completion" field
-def num_completion_tokens_from_examples(examples):
+# Function to count tokens specifically for the assistant's completion field
+def num_completion_tokens_from_chat_examples(examples):
     num_tokens = 0
     for example in examples:
-        completion = example.get("completion", "")
-        num_tokens += len(encoding.encode(completion))
+        for message in example["messages"]:
+            if message.get("role") == "assistant":
+                content = message.get("content", "")
+                num_tokens += len(encoding.encode(content))
     return num_tokens
 
-# Function to print distribution statistics of token counts
+# Print distribution statistics of token counts
 def print_distribution(values, name):
     print(f"\n#### Distribution of {name}:")
     print(f"min / max: {min(values)}, {max(values)}")
     print(f"mean / median: {np.mean(values)}, {np.median(values)}")
     print(f"p10 / p90: {np.quantile(values, 0.1)}, {np.quantile(values, 0.9)}")
 
-# Example usage with dataset (assumed list of examples with "prompt" and "completion")
-# dataset = [{"prompt": "Some question?", "completion": "Some answer."}, ...]
-
 # Count tokens in prompts and completions
-total_tokens = num_tokens_from_examples(dataset)
+total_tokens = num_tokens_from_chat_examples(dataset)
 
-# Count tokens in just the completions
-completion_tokens = num_completion_tokens_from_examples(dataset)
+# Count tokens in just the assistant's completion field
+completion_tokens = num_completion_tokens_from_chat_examples(dataset)
 
 # Example distributions for testing
 print_distribution([total_tokens, completion_tokens], "token counts")
-
-#	•	GPT-3.5 has a limit of 4096 tokens.
-#	•	GPT-4 (8k context) has a limit of 8192 tokens.
-#	•	GPT-4 (32k context) has a limit of 32,768 tokens.
-
-
 
 # Warnings and token counts
 n_missing_prompt = 0
@@ -109,28 +96,21 @@ completion_lens = []
 total_lens = []
 
 for ex in dataset:
-    prompt = ex.get("prompt", None)
-    completion = ex.get("completion", None)
+    prompt_len = 0
+    completion_len = 0
+    for message in ex["messages"]:
+        role = message.get("role")
+        content = message.get("content", "")
+        
+        if role == "user":
+            prompt_len += len(encoding.encode(content))
+        elif role == "assistant":
+            completion_len += len(encoding.encode(content))
     
-    # Check if prompt or completion is missing
-    if not prompt:
-        n_missing_prompt += 1
-    if not completion:
-        n_missing_completion += 1
-    
-    # Count tokens for prompt, completion, and total
-    prompt_len = len(encoding.encode(prompt)) if prompt else 0
-    completion_len = len(encoding.encode(completion)) if completion else 0
     total_len = prompt_len + completion_len
-    
-    # Append lengths to respective lists
     prompt_lens.append(prompt_len)
     completion_lens.append(completion_len)
     total_lens.append(total_len)
-
-# Print warnings for missing prompt or completion
-print("Num examples missing prompt:", n_missing_prompt)
-print("Num examples missing completion:", n_missing_completion)
 
 # Print distributions of token counts
 print_distribution(prompt_lens, "num_tokens_per_prompt")
@@ -141,9 +121,8 @@ print_distribution(total_lens, "num_total_tokens_per_example")
 n_too_long = sum(l > 16385 for l in total_lens)
 print(f"\n{n_too_long} examples may be over the 16,385 token limit, they will be truncated during fine-tuning")
 
-
+# Token count and epochs estimation
 MAX_TOKENS_PER_EXAMPLE = 16385  # Max token limit for GPT-4 (8k context) models
-
 TARGET_EPOCHS = 3
 MIN_TARGET_EXAMPLES = 100
 MAX_TARGET_EXAMPLES = 25000
@@ -160,9 +139,9 @@ if n_train_examples * TARGET_EPOCHS < MIN_TARGET_EXAMPLES:
 elif n_train_examples * TARGET_EPOCHS > MAX_TARGET_EXAMPLES:
     n_epochs = max(MIN_DEFAULT_EPOCHS, MAX_TARGET_EXAMPLES // n_train_examples)
 
-# Token count in the dataset (prompt + completion per example)
+# Token count in the dataset (messages per example)
 n_billing_tokens_in_dataset = sum(
-    min(MAX_TOKENS_PER_EXAMPLE, len(encoding.encode(ex["prompt"])) + len(encoding.encode(ex["completion"])))
+    min(MAX_TOKENS_PER_EXAMPLE, sum(len(encoding.encode(msg["content"])) for msg in ex["messages"]))
     for ex in dataset
 )
 
