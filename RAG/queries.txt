@@ -1,0 +1,12 @@
+Query: can I get some info about graduation courses
+Answer: Graduation courses typically refer to the programs of study that students pursue leading up to graduation from a university or college. These can include both undergraduate and graduate programs. 
+
+Undergraduate courses are for students who have completed high school and are seeking a bachelor's degree. These programs aim to provide a broad education and prepare students for entry-level positions in various fields.
+
+Graduate courses are for students who have already completed a bachelor's degree and are seeking advanced knowledge and skills in a specific area. These programs can lead to master's or doctoral degrees and are often more focused on research and specialized skills.
+
+If you have specific questions about graduation courses or programs of study, feel free to ask for more information.
+
+Query: can I get some more info, please
+Answer: Is there a specific topic or area you would like more information about? Feel free to ask your question, and I'll do my best to assist you.
+
