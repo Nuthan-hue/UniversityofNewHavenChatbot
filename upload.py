@@ -10,4 +10,4 @@ response = openai.File.create(
 )
 
 # Print the response to see the file details
-print(response)
+print(response["id"])
