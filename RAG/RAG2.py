@@ -7,7 +7,7 @@ import numpy as np
 openai.api_key = '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'
 
 # Load document data from JSON file
-with open("documents.json", "r") as f:
+with open("/Users/nuthankishoremaddineni/Desktop/UNHChatbot/web_scraping/myfirst/myfirst/spiders/rag_data.json", "r") as f:
     documents = json.load(f)
 
 def generate_embedding(text):
@@ -27,16 +27,23 @@ for doc in documents:
     metadata.append(doc['metadata'])
 
 embeddings = np.array(embeddings).astype("float32")
-
+print(embeddings.shape)
 dimension = embeddings.shape[1]
-index = faiss.IndexFlatL2(dimension)
-index.add(embeddings)
-
+print(dimension)
+index = faiss.IndexFlatL2(dimension)#index here is empty
+#print(type(index))
+#print("Index Dimension before:", index.d)
+print("Number of vectors in the index:", index.ntotal)
+#print(type(embeddings))
+index.add(embeddings)#"Yes, you can calculate the L2 distance between two vectors without adding them to an index. In fact, calculating the L2 distance between two vectors is a straightforward mathematical operation, and it doesn’t require a FAISS index."
+#print("Index Dimension after:", index.d)
+print("Number of vectors in the index:", index.ntotal)
 metadata_dict = {i: metadata[i] for i in range(len(metadata))}
 
-def search_faiss_index(query, index, k=2):
+def search_faiss_index(query, index, k=2):#k=2, returns 
     query_embedding = np.array(generate_embedding(query)).reshape(1, -1).astype("float32")
     distances, indices = index.search(query_embedding, k)
+    print(distances)
     return indices[0]
 
 def generate_answer_with_context(retrieved_docs, user_question):
@@ -52,10 +59,11 @@ def generate_answer_with_context(retrieved_docs, user_question):
 
 def retrieve_and_generate_answer(user_question, index):
     top_k_indices = search_faiss_index(user_question, index, k=2)
+    print(f'topks:{top_k_indices}')
     retrieved_docs = [{"text": documents[i]['text'], "metadata": metadata_dict[i]} for i in top_k_indices]
     return generate_answer_with_context(retrieved_docs, user_question)
 
-# Continuous input loop
+# Continuous input loo
 with open("queries.txt", "a") as file:
     try:
         while True:
