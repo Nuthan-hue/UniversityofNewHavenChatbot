@@ -21,10 +21,12 @@ def generate_embedding(text):
 embeddings = []
 metadata = []
 
-for doc in documents:
+for i,doc in enumerate(documents):
     embedding = generate_embedding(doc['text'])
     embeddings.append(embedding)
     metadata.append(doc['metadata'])
+    if i==5:
+        break
 
 embeddings = np.array(embeddings).astype("float32")
 print(embeddings.shape)
@@ -44,6 +46,7 @@ def search_faiss_index(query, index, k=2):#k=2, returns
     query_embedding = np.array(generate_embedding(query)).reshape(1, -1).astype("float32")
     distances, indices = index.search(query_embedding, k)
     print(distances)
+    print(indices[0])
     return indices[0]
 
 def generate_answer_with_context(retrieved_docs, user_question):
@@ -61,6 +64,7 @@ def retrieve_and_generate_answer(user_question, index):
     top_k_indices = search_faiss_index(user_question, index, k=2)
     print(f'topks:{top_k_indices}')
     retrieved_docs = [{"text": documents[i]['text'], "metadata": metadata_dict[i]} for i in top_k_indices]
+    print(retrieved_docs)
     return generate_answer_with_context(retrieved_docs, user_question)
 
 # Continuous input loo

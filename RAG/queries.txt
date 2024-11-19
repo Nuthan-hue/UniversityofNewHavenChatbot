@@ -99,3 +99,6 @@ These are just a few mentioned in the provided context.
 Query: some more please
 Answer: Here is a snippet of two different resources related to admitted international graduate students at the University of New Haven. One is about what to do when you arrive on campus, and the other is a list of documents to bring with you before you arrive. You can click on the provided links to access the full information.
 
+Query: Wheree is UNH located at?
+Answer: The University of New Haven (UNH) is located in West Haven, Connecticut, USA.
+
