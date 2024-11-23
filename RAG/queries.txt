@@ -120,3 +120,6 @@ Answer: It seems like you are looking for information specifically about Master'
 Query: How many masters degrees are availabe in UNH?
 Answer: I don't have specific information on the number of master's degrees available at the University of New Hampshire (UNH). To find out the exact number and details of master's degree programs offered at UNH, I recommend visiting the official UNH website or contacting the university directly for accurate and up-to-date information.
 
+Query: How many master courses do the university have
+Answer: The University of New Haven offers more than 60 master’s, doctoral, and certificate programs.
+

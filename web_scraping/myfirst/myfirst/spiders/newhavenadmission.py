@@ -1,3 +1,6 @@
+#scrapy runspider newhavenadmission.py -o output.json
+
+
 # -*- coding: utf-8 -*-
 import scrapy
 import re

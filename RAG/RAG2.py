@@ -74,7 +74,7 @@ def retrieve_and_generate_answer(user_question, index, documents, metadata_dict)
 
 def main():
     # Load the documents from file
-    file_path = "/Users/nuthankishoremaddineni/Desktop/UNHChatbot/RAG/documents.json"
+    file_path = "/Users/nuthankishoremaddineni/Desktop/UNHChatbot/web_scraping/myfirst/myfirst/spiders/rag_data.json"
     documents = load_documents(file_path)
 
     # Generate embeddings and metadata
