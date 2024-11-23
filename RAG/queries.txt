@@ -102,3 +102,21 @@ Answer: Here is a snippet of two different resources related to admitted interna
 Query: Wheree is UNH located at?
 Answer: The University of New Haven (UNH) is located in West Haven, Connecticut, USA.
 
+Query: What is the full form of UNH
+Answer: I'm sorry, but I couldn't find specific information on the full form of "UNH." Can you please provide more context or details so I can better assist you?
+
+Query: university of New Haven
+Answer: The University of New Haven offers a range of online programs for students who are unable to be on campus physically but still want to pursue a college education. These online courses and programs maintain the same quality standards, educational objectives, and academic credit as their on-campus counterparts. Additionally, the university provides undergraduate programs for individuals with a high school diploma seeking to enhance job opportunities and increase income, working adults pursuing a bachelor's degree, transfer students with a two-year degree aiming to earn a four-year degree, and those looking to improve knowledge, skills, and confidence.
+
+Query: what is the full form of UNH
+Answer: I'm sorry, but it seems like there was an error in providing the full form of UNH. UNH usually stands for the University of New Hampshire, which is a public research university in the United States. Let me know if you need more information.
+
+Query: Where is the University of New Haven located?
+Answer: The University of New Haven is located in West Haven, Connecticut, USA.
+
+Query: How many mastr degree courses are available
+Answer: It seems like you are looking for information specifically about Master's degree courses. The number of Master's degree courses available can vary greatly depending on the university and the field of study. It would be best to check with individual universities or research online to get a more accurate number of Master's degree courses that are available. If you have a specific field of study in mind, I can help you find information on Master's degree programs in that area.
+
+Query: How many masters degrees are availabe in UNH?
+Answer: I don't have specific information on the number of master's degrees available at the University of New Hampshire (UNH). To find out the exact number and details of master's degree programs offered at UNH, I recommend visiting the official UNH website or contacting the university directly for accurate and up-to-date information.
+
