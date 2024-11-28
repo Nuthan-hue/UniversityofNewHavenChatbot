@@ -2,6 +2,7 @@ import json
 import openai
 import faiss
 import numpy as np
+import os
 
 # Initialize OpenAI API Key
 openai.api_key = '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'
@@ -22,10 +23,7 @@ def generate_embedding(text):
 
 def create_faiss_index(embeddings):
     """
-    Create
-     and populate a FAISS index with the provided embeddings.
-    Returns the populated FAISS index.
-    for large data getting data from Faiss_index is easy compared to numpy array
+    Create and populate a FAISS index with the provided embeddings.
     """
     embeddings = np.array(embeddings).astype("float32")
     dimension = embeddings.shape[1]
@@ -38,7 +36,6 @@ def create_faiss_index(embeddings):
 def search_faiss_index(query, index, k=2):
     """
     Search the FAISS index for the top-k nearest neighbors to the query.
-    Returns the indices of the nearest embeddings.
     """
     query_embedding = np.array(generate_embedding(query)).reshape(1, -1).astype("float32")
     distances, indices = index.search(query_embedding, k)
@@ -72,26 +69,52 @@ def retrieve_and_generate_answer(user_question, index, documents, metadata_dict)
     print(f"Retrieved Documents: {retrieved_docs}")
     return generate_answer_with_context(retrieved_docs, user_question)
 
-def main():
-    # Load the documents from file
-    file_path = "/Users/nuthankishoremaddineni/Desktop/UNHChatbot/web_scraping/myfirst/myfirst/spiders/rag_data.json"
-    documents = load_documents(file_path)
+def save_embeddings(file_path, embeddings, metadata):
+    """Save embeddings and metadata to a file."""
+    with open(file_path, "w") as f:
+        json.dump({"embeddings": embeddings, "metadata": metadata}, f)
 
-    # Generate embeddings and metadata
-    print("\n--- Generating Embeddings ---")
+def load_embeddings(file_path):
+    """Load embeddings and metadata from a file."""
+    with open(file_path, "r") as f:
+        data = json.load(f)
+    return data["embeddings"], data["metadata"]
+
+def main():
+    # File paths
+    document_file = "/Users/nuthankishoremaddineni/Desktop/UNHChatbot/web_scraping/myfirst/myfirst/spiders/rag_data.json"
+    embeddings_file = "embeddings.json"
+    
+    # Load documents
+    documents = load_documents(document_file)
+    
+    # Check if embeddings file exists
     embeddings = []
     metadata = []
-    for i, doc in enumerate(documents):
-        embedding = generate_embedding(doc['text'])
-        embeddings.append(embedding)
-        metadata.append(doc['metadata'])
-        # Limit the embedding generation for testing
-        if i == 5:
-            break
+    if os.path.exists(embeddings_file):
+        regenerate = input("Embeddings file exists. Do you want to regenerate embeddings? (yes/no): ").strip().lower()
+        if regenerate == "no":
+            embeddings, metadata = load_embeddings(embeddings_file)
+        else:
+            print("\n--- Generating Embeddings ---")
+            for doc in (documents):
+                embedding = generate_embedding(doc['text'])
+                embeddings.append(embedding)
+                metadata.append(doc['metadata'])
+                #if i == 5:  # Limit for testing
+                #    break
+            save_embeddings(embeddings_file, embeddings, metadata)
+    else:
+        print("\n--- Generating Embeddings ---")
+        for doc in (documents):
+            embedding = generate_embedding(doc['text'])
+            embeddings.append(embedding)
+            metadata.append(doc['metadata'])
+        save_embeddings(embeddings_file, embeddings, metadata)
 
     # Create FAISS index
     print("\n--- Creating FAISS Index ---")
-    index = create_faiss_index(embeddings)
+    index = create_faiss_index(np.array(embeddings).astype("float32"))
     metadata_dict = {i: metadata[i] for i in range(len(metadata))}
 
     # Continuous Query Input Loop

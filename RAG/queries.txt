@@ -123,3 +123,24 @@ Answer: I don't have specific information on the number of master's degrees avai
 Query: How many master courses do the university have
 Answer: The University of New Haven offers more than 60 master’s, doctoral, and certificate programs.
 
+Query: Hi
+Answer: Hello! How can I help you today?
+
+Query: Wyhat is the full form of UNH
+Answer: The full form of UNH is the University of New Haven.
+
+Query: can you please name some International staff
+Answer: It seems like you are looking for names of international staff from a specific organization or institution. Can you please provide more details so I can assist you better?
+
+Query: name of some international staff
+Answer: I apologize for the misunderstanding. It seems like there was an error in providing information related to international staff names. Can you please provide more specific details or context so I can assist you better in finding the information you are looking for?
+
+Query: can I knopw about application fee please
+Answer: There are different types of application fees based on the institution or program you are applying to. Some universities offer application fee waivers for specific circumstances, such as financial need or early decision application. The application fee is typically paid when submitting your application and varies in amount depending on the institution. It is advisable to check the specific application fee details on the university's website or contact the admissions office for more information.
+
+Query: can I know all the application fees please
+Answer: It seems like you are requesting information about application fees, but the provided text does not contain specific details about application fees for different programs or universities. Could you please provide me with the names of the specific universities or programs you are interested in so I can provide you with accurate information regarding their application fees?
+
+Query: what is sucess % for UNH visa approval
+Answer: I apologize for the lack of specific information regarding the success rate for visa approval at the University of New Haven. To inquire about the visa approval success rate, it would be best to contact the international admissions office at the University of New Haven directly. They should be able to provide you with more specific and up-to-date information on visa approval rates for their international students.
+

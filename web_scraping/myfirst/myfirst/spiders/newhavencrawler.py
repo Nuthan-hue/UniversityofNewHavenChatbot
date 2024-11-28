@@ -1,5 +1,5 @@
 #scrapy crawl newhavencrawler -o output.json
-
+#scrapy crawl newhavencrawler -o rag_data.json
 '''from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 

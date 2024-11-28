@@ -13,3 +13,6 @@ Answer: The full form of UNH is University of New Haven.
 Query: where is the university located?
 Answer: The University of New Haven is located in West Haven, Connecticut, with additional programs for working professionals offered at the Graduate Business Campus in Orange, Connecticut.
 
+Query: hi
+Answer: Hello! How can I assist you today?
+
