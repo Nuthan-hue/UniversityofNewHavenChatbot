@@ -144,3 +144,24 @@ Answer: It seems like you are requesting information about application fees, but
 Query: what is sucess % for UNH visa approval
 Answer: I apologize for the lack of specific information regarding the success rate for visa approval at the University of New Haven. To inquire about the visa approval success rate, it would be best to contact the international admissions office at the University of New Haven directly. They should be able to provide you with more specific and up-to-date information on visa approval rates for their international students.
 
+Query: what programs does university offers
+Answer: Here are some programs that the University of New Haven offers:
+
+1. Graduate Programs: The university offers a variety of graduate programs. You can learn more about these programs, scholarship opportunities, and admissions requirements by attending their informative webinars. Check your email for invitations to upcoming webinars with program coordinators. [Learn more](https://www.newhaven.edu:443/admissions/graduate/events/webinars.php)
+
+2. Pre-College Programs: The university collaborates with high schools in the community to offer early college access programming, including low- and no-cost college courses, pathways for certain academic programs, and scholarship opportunities. Local youth are invited to participate in innovative and individualized summer programs, with a focus on providing high-quality instruction in a safe learning environment. [Learn more](https://www.newhaven.edu:443/admissions/pre-college/index.php)
+
+You can visit the provided links for more information on these programs.
+
+Query: How far is University from New Haven
+Answer: The University of New Haven is located in West Haven, Connecticut, which is about 5 miles away from New Haven.
+
+Query: UINH?
+Answer: It seems like you may have entered a typo or an acronym that I am not familiar with. How can I assist you today?
+
+Query: UNH
+Answer: It looks like you might be referring to the University of New Haven (UNH), which offers various programs and opportunities such as the Model United Nations Academy for students to gain valuable skills and experiences. If you need more information or assistance related to UNH, feel free to let me know!
+
+Query: yes, full form please
+Answer: The full form of "yes" is "Year End Savings."
+
