@@ -1,0 +1,10 @@
+interactive environment between quesries--Explore
+store Embeddings in a variable and everytime I run , a choice of new embedings or continue
+clear code flow(use main function)
+
+
+
+
+
+In RAG is it good to use meta data during retrival process, 
+But in our project we are not using metadata for retriving datya
