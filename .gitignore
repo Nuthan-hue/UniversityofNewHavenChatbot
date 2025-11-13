@@ -3,3 +3,6 @@
 RAG/doubts.txt
 **/__pycache__/
 web_scraping/myfirst/myfirst/output.json
+.idea
+.venv
+.rasa
