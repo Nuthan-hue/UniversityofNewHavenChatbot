@@ -1,6 +1,25 @@
 version: "3.1"
 
 nlu:
+- synonyms:
+    goodbye: [bye, goodby, goodbye, see you, see ya, cu, cya]
+    hello: [hi, hey, hello, good morning, good evening, good afternoon]
+
+- lookup: book_genres
+  examples: |
+    - science fiction
+    - fantasy
+    - mystery
+    - romance
+    - thriller
+    - non-fiction
+    - historical fiction
+    - young adult
+    - horror
+    - biography
+
+
+
 - intent: greet
   examples: |
     - hey
